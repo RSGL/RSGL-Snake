@@ -1,0 +1,9 @@
+SOURCE += source/*.cpp
+LIBS += -lRSGL
+ARGS += -g
+OUTPUT = RSGL-Snake
+GXX = g++
+
+pash{
+      ./$(OUTPUT)
+}
