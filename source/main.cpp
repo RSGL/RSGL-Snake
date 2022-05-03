@@ -10,8 +10,10 @@ std::vector<std::vector<RSGL::rect>> map;
 std::vector<RSGL::point> snake; RSGL::point apple;
 
 int QLearning(std::vector<int> data){
-      
+      int output;
+      return output;
 }
+
 
 
 int main(){
@@ -41,7 +43,7 @@ int main(){
                               case 2: if (snake.at(i).y < (win.r.length/size)-3) if (snake.at(i).y < (win.r.length/size)-2) snake.at(i).y++; else i=snake.size(); break;
                               case 3: if (snake.at(i).x) snake.at(i).x--; else i=snake.size(); break;
                               case 0: if (snake.at(i).y) snake.at(i).y--; else i=snake.size(); break;
-                        } 
+                        }
                   } frame=0;
             }
             if (apple.x == snake.at(0).x && apple.y == snake.at(0).y){ 
